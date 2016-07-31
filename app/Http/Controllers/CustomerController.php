@@ -91,16 +91,16 @@ class CustomerController extends Controller
     * Front-End
     * show registration Page
     */
-    publid function registration()
+    public function register()
     {
-      return view('frontend.pages.customer.create');
+      return view('frontend.page.customer.register');
     }
 
     /**
     * Front-End
     * save customer information
     */
-    publid function doRegistration()
+    public function doRegister()
     {
       $customer = $request->all();
       $result = get_action('customer_create',$customer);
@@ -111,16 +111,16 @@ class CustomerController extends Controller
     * Front-End
     * show customer login page
     */
-    publid function login()
+    public function login()
     {
-
+      return view('frontend.page.customer.login');
     }
 
     /**
     * Front-End
     * show customer login page
     */
-    publid function dologin()
+    public   function dologin()
     {
 
     }

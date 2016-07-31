@@ -13,5 +13,9 @@
 
 Route::get('/', 'HomeController@show');
 
-Route::get('/customer/create','CustomerController@create');
-Route::post('/customer/store','CustomerController@store');
+Route::group(['prefix' => 'customer'],function(){
+  Route::get('/register','CustomerController@register');
+  Route::post('/doregister','CustomerController@doregister');
+  Route::get('/login','CustomerController@login');
+  Route::post('/dologin','CustomerController@dologin');
+});

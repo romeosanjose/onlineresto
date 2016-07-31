@@ -87,7 +87,7 @@ a:after {
 	background-position: center center;
 	min-height: 700px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -122,9 +122,9 @@ a:after {
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 500px;
+	min-height: 600px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -138,6 +138,60 @@ a:after {
 
 
 #portfoliowrap h3 {
+	color: #ffffff;
+}
+
+/* Registration Wrap */
+#registrationwrap {
+	background: url(../img/portfolio-bg.jpg) no-repeat center top;
+	margin-top: 0px;
+	padding-top:70px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 600px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#registrationwrap h3 {
+	color: #ffffff;
+}
+
+/* Login Wrap */
+#loginwrap {
+	background: url(../img/portfolio-bg.jpg) no-repeat center top;
+	margin-top: 0px;
+	padding-top:70px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 600px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#loginwrap h3 {
 	color: #ffffff;
 }
 
@@ -193,7 +247,7 @@ a:after {
 }
 
 #f h3 {
-	color: white;	
+	color: white;
 }
 
 #f i {
@@ -227,7 +281,7 @@ a:after {
 	background-position: center center;
 	min-height: 500px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -342,7 +396,7 @@ a:after {
 .menu a > i {
 	float: left;
 	display: inline-block;
-	vertical-align: middle; 
+	vertical-align: middle;
 	text-align: left;
 	width: 25px;
 	font-size: 14px;
@@ -450,7 +504,7 @@ a:after {
 	cursor: pointer;
 	color: white;
 	background-color: #16a085;
-	
+
 }
 
 /* TEAM CONF */

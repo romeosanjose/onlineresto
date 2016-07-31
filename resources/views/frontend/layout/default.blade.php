@@ -20,10 +20,12 @@
     </head>
 
 	<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+  @include('frontend.layout.partials.navigation')
 
-@yield('content')
-
-    </body>
+      @yield('content')
+      
+  @include('frontend.layout.partials.footer')
+  </body>
 </html>
 
 
