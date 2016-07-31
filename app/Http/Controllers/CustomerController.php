@@ -27,7 +27,7 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -38,11 +38,7 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-      $createAction = new Create();
-      $customer = $request->all();
-      // $result = $createAction->customer_create($customer);
-      $result = get_action('customer_create',$customer);
-      return $result;
+
     }
 
     /**
@@ -87,7 +83,46 @@ class CustomerController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+    }
+
+
+    /**
+    * Front-End
+    * show registration Page
+    */
+    publid function registration()
+    {
+      return view('frontend.pages.customer.create');
+    }
+
+    /**
+    * Front-End
+    * save customer information
+    */
+    publid function doRegistration()
+    {
+      $customer = $request->all();
+      $result = get_action('customer_create',$customer);
+      return $result;
+    }
+
+    /**
+    * Front-End
+    * show customer login page
+    */
+    publid function login()
+    {
+
+    }
+
+    /**
+    * Front-End
+    * show customer login page
+    */
+    publid function dologin()
+    {
+
     }
 
 
