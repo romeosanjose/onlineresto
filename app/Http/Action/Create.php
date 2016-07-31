@@ -32,7 +32,7 @@ class Create{
           'password'            => 'required',
           'country'             => 'required',
           'region'              => 'required',
-          'billing_address1'    => 'required',
+          'billing_address1'    => 'required'
       );
 
       $messages  = [
@@ -52,11 +52,11 @@ class Create{
           return $response;
       }
 
+      $customer['state'] = 'active';
+
       Customer::create($customer);
       $response = array('status'=>true,'message'=> 'Record Successfully Saved!');
       return $response;
-
-
 
   }
 

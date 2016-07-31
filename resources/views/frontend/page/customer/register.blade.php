@@ -3,7 +3,7 @@
 @section('content')
 <section id="registration" name="registration">
     <div id="portfoliowrap">
-      <div class="row">
+
         <div class="col-md-10 col-lg-offset-2">
               <form method="post" action="{{action('CustomerController@doregister')}}" />
                  <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -37,8 +37,7 @@
                               <input type="text" placeholder="* Country"  class="form-control" name="country" required>
                             </div>
                             <div class="form-group">
-                              <label  for="dob">Birthday:</label>
-                              <input data-provide="datepicker" name="dob" id="dob">
+                              <textArea class="form-control" id="billing_address1" name="billing_address1" placeholder="* Billing Address 1" required></textArea>
                             </div>
                         </div>
                       </div>
@@ -57,8 +56,7 @@
                               <input type="text" placeholder="* Region"  class="form-control" name="region" required>
                             </div>
                             <div class="form-group">
-                              <label class="radio-inline"><input type="radio" name="gender" value="male">Male</label>
-                              <label class="radio-inline"><input type="radio" name="gender" value="female">Female</label>
+                              <textArea class="form-control" id="billing_address1" name="billing_address2" placeholder="Billing Address 2"></textArea>
                             </div>
                         </div>
                       </div>
@@ -68,15 +66,15 @@
                     <button type="submit" class="btn btn-primary login-button" style="width:200px;">Register Now</button>
                   </div>
                  </div>
-
-
-
-
-
               </form>
-
         </div>
-      </div>
   </div>
+  <script>
+    $(function(){
+      $('#dob').datepicker({
+          format: 'yyyy-mm-dd'
+      });
+    });
+  </script>
 </section>
 @stop

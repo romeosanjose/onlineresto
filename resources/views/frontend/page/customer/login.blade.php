@@ -3,7 +3,7 @@
 @section('content')
 <section id="login" name="login">
     <div id="loginwrap">
-      <div class="row">
+
         <div class="col-md-4 col-md-offset-4">
               <form method="post" action="{{action('CustomerController@dologin')}}" />
                  <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -19,7 +19,7 @@
                 <a href="/customer/register">Sign-up Now</a>
               </div>
         </div>
-      </div>
+      
   </div>
 </section>
 @stop

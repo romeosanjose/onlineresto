@@ -100,7 +100,7 @@ class CustomerController extends Controller
     * Front-End
     * save customer information
     */
-    public function doRegister()
+    public function doRegister(Request $request)
     {
       $customer = $request->all();
       $result = get_action('customer_create',$customer);
